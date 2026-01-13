@@ -34,7 +34,7 @@ export default function decorate(block) {
     const showMoreBtn = document.createElement('button');
     showMoreBtn.textContent = 'Show More';
     showMoreBtn.className = 'cards-show-more';
-    
+
     showMoreBtn.addEventListener('click', () => {
       const hiddenCards = ul.querySelectorAll('li[style*="display: none"]');
       if (hiddenCards.length > 0) {
