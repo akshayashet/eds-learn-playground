@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p174852-e1857153.adobeaemcloud.com/bin/franklin.delivery/akshayashet/eds-learn-playground/main"
+    url: "https://author-p43719-e1080482.adobeaemcloud.com/bin/franklin.delivery/akshayashet/eds-learn-playground/main"
     type: "markup"
     suffix: ".html"
