@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/eds-learn-playground/:/",
-    "/content/eds-learn-playground:/.helix/config.json",
-    "/content/eds-learn-playground/metadata:/metadata.json"
+    "/content/eds-learning-playground/:/",
+    "/content/eds-learning-playground:/.helix/config.json",
+    "/content/eds-learning-playground/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/eds-learn-playground/"
+    "/content/eds-learning-playground/"
   ]
 }
