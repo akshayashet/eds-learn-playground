@@ -12,7 +12,7 @@
 
 :root {
   /* colors */
-  --background-color: white;
+  --background-color: #c0bcc1;
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
@@ -38,6 +38,19 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* gradients */
+  --gradient-start: #a8d8ea;
+  --gradient-end: #d4f1f4; 
+  --background-gradient: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  --card-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --button-gradient: linear-gradient(135deg, #030d4b 0%, #052d8a 100%);
+  --gradient-sunset: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+  --gradient-ocean: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+  --gradient-forest: linear-gradient(135deg, #34eca0 0%, #71b280 100%);
+  --gradient-rose: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+  --gradient-midnight: linear-gradient(135deg, #232526 0%, #414345 100%);
+  
 }
 
 /* fallback fonts */
@@ -73,7 +86,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
+  background: var(--gradient-forest);
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
@@ -209,6 +222,11 @@ button.secondary {
   border: 2px solid currentcolor;
   color: var(--text-color);
 }
+button{
+  background: var(--button-gradient);
+  border: 1px solid transparent;
+  color: var(--light-color)
+}
 
 main img {
   max-width: 100%;
@@ -249,9 +267,15 @@ main > .section:first-of-type {
 }
 
 /* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
+main .section.light,main .section.highlight {
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.highlight {
+  background: var(--gradient-sunset);
+}
+
+main .section.light {
+  background-color: var(--background-color);
 }

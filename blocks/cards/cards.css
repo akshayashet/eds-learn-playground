@@ -9,11 +9,23 @@
 
 .cards > ul > li {
   border: 1px solid #dadada;
-  background-color: var(--background-color);
+  background: var(--card-gradient);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cards .cards-show-more {
+  display: block;
+  margin: 24px auto 0;
+  text-align: center;
 }
 
 .cards .cards-card-body {
   margin: 16px;
+}
+
+.cards .cards-card-body p{
+  color: var(--light-color)
 }
 
 .cards .cards-card-image {

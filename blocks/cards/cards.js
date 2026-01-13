@@ -20,4 +20,38 @@ export default function decorate(block) {
     img.closest('picture').replaceWith(optimizedPic);
   });
   block.replaceChildren(ul);
+
+  // Show only 4 cards initially if there are more than 4
+  const cards = ul.querySelectorAll('li');
+  if (cards.length > 4) {
+    cards.forEach((card, index) => {
+      if (index >= 4) {
+        card.style.display = 'none';
+      }
+    });
+
+    // Create "Show More" button
+    const showMoreBtn = document.createElement('button');
+    showMoreBtn.textContent = 'Show More';
+    showMoreBtn.className = 'cards-show-more';
+    
+    showMoreBtn.addEventListener('click', () => {
+      const hiddenCards = ul.querySelectorAll('li[style*="display: none"]');
+      if (hiddenCards.length > 0) {
+        hiddenCards.forEach((card) => {
+          card.style.display = '';
+        });
+        showMoreBtn.textContent = 'Show Less';
+      } else {
+        cards.forEach((card, index) => {
+          if (index >= 4) {
+            card.style.display = 'none';
+          }
+        });
+        showMoreBtn.textContent = 'Show More';
+      }
+    });
+
+    block.append(showMoreBtn);
+  }
 }
