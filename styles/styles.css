@@ -202,6 +202,12 @@ button {
   white-space: nowrap;
 }
 
+button{
+  background: var(--button-gradient);
+  border: 1px solid transparent;
+  color: var(--light-color)
+}
+
 a.button:hover,
 a.button:focus,
 button:hover,
@@ -222,11 +228,7 @@ button.secondary {
   border: 2px solid currentcolor;
   color: var(--text-color);
 }
-button{
-  background: var(--button-gradient);
-  border: 1px solid transparent;
-  color: var(--light-color)
-}
+
 
 main img {
   max-width: 100%;
