@@ -58,12 +58,12 @@
     background-color: darkgray;
 }
 
-.block.quote .bg-red{
+.block.quote.bg-red{
     background-color: #f28b82;
 }
-.block.quote .bg-yellow{
+.block.quote.bg-yellow{
     background-color: #fbbc04;
 }
-.block.quote .bg-blue{
+.block.quote.bg-blue{
     background-color: #223f6c;
 }
