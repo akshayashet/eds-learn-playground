@@ -45,10 +45,10 @@
   --background-gradient: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
   --card-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --button-gradient: linear-gradient(135deg, #030d4b 0%, #052d8a 100%);
-  --gradient-sunset: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+  --gradient-sunset: linear-gradient(135deg, #ed5c38 0%, #feca57 100%);
   --gradient-ocean: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
-  --gradient-forest: linear-gradient(135deg, #34eca0 0%, #71b280 100%);
-  --gradient-rose: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+  --gradient-forest: linear-gradient(135deg, #7baf9a 0%, #d3f5db 100%);
+  --gradient-rose: linear-gradient(135deg, #ee0979 0%, #fcaae5 100%);
   --gradient-midnight: linear-gradient(135deg, #232526 0%, #414345 100%);
   
 }
